@@ -170,14 +170,17 @@ MouseTicker(){
         tdw := dt(mtu, tNow), tds := dt(mtd, tNow)
         ; 计算这段时长的加速度
         ; tooltip % TMouse_MouseSpeedRatio
-        max := ma(tdd - tda) * 0.5 ; * TMouse_MouseSpeedRatio
-        may := ma(tds - tdw) * 0.5 ; * TMouse_MouseSpeedRatio
+        max := ma(tdd - tda) * 0.2 ; * TMouse_MouseSpeedRatio
+        may := ma(tds - tdw) * 0.2 ; * TMouse_MouseSpeedRatio
     }
-
+    ;; 禁用加速度
+    ;max := 0
+    ;may := 0
     ; ; 摩擦力不阻碍用户意志
     mvx := Friction(mvx + max, max), mvy := Friction(mvy + may, may)
 
     ; 实际移动需要约化
+    ;mdx += mvx, mdy += mvy
     mdx += mvx, mdy += mvy
 
     if ( mvx == 0 && mvy == 0){

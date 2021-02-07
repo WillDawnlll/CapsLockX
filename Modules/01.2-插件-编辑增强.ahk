@@ -66,7 +66,10 @@ ArrowTicker()
     tda := dt(arrow_tl, tNow), tdd := dt(arrow_tr, tNow)
     tdw := dt(arrow_tu, tNow), tds := dt(arrow_td, tNow)
     ; 计算加速度
-    kax := ma(tdd - tda), kay := ma(tds - tdw)
+    ;kax := ma(tdd - tda), kay := ma(tds - tdw)
+    ; 禁用加速度
+    kax :=0
+    kay :=0
     
     ; 摩擦力不阻碍用户意志
     arrow_vx := Friction(arrow_vx + kax, kax), arrow_vy := Friction(arrow_vy + kay, kay)

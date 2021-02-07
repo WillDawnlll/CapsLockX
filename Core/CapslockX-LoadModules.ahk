@@ -18,7 +18,6 @@ GoSub Setup_13
 GoSub Setup_14
 GoSub Setup_15
 GoSub Setup_16
-GoSub Setup_17
 
 Return
 #If
@@ -50,26 +49,23 @@ Return
         #Include ./Modules\CapsLockX提权请求.ahk
 #If
     Setup_10:
-        #Include ./Modules\LaptopKeyboardFix.ahk
-#If
-    Setup_11:
         #Include ./Modules\SaladictTranslate.ahk
 #If
-    Setup_12:
+    Setup_11:
         #Include ./Modules\SnoChordTyping.ahk
 #If
-    Setup_13:
+    Setup_12:
         #Include ./Modules\ToolTipFont.ahk
 #If
-    Setup_14:
+    Setup_13:
         #Include ./Modules\应用-CapsX-Cursor.ahk
 #If
-    Setup_15:
+    Setup_14:
         #Include ./Modules\应用-IAR改选项为CMSIS-DAP.ahk
 #If
-    Setup_16:
+    Setup_15:
         #Include ./Modules\应用-LoopbackExemptionManager.ahk
 #If
-    Setup_17:
+    Setup_16:
         #Include ./Modules\应用-MobaXterm.ahk
 
