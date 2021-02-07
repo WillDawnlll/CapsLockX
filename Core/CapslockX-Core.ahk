@@ -99,8 +99,8 @@ CapsLockXTurnOn()
 ; Hotkey $*%T_CapsLockXKey% Up, CapsLockX_Up
 Hotkey $*CapsLock, CapsLockX_Dn
 Hotkey $*CapsLock Up, CapsLockX_Up
-Hotkey $Space, CapsLockX_Dn
-Hotkey $Space Up, CapsLockX_Up
+Hotkey $RAlt, CapsLockX_Dn
+Hotkey $RAlt Up, CapsLockX_Up
 
 #Include Core\CapsLockX-LoadModules.ahk
 
@@ -138,7 +138,7 @@ CapsLockX_Dn:
 
     ; (20200809)长按显示帮助
     if (A_PriorKey == lastCapsLockKey) {
-        if ( A_TickCount - CapsLockPressTimestamp > 1000) {
+        if ( A_TickCount - CapsLockPressTimestamp > 2000) {
             CapslockXShowHelp(globalHelpInfo, 1, lastCapsLockKey)
             KeyWait, %lastCapsLockKey%
             ; KeyWait, CapsLock
@@ -165,8 +165,8 @@ CapsLockX_Up:
             SetCapsLockState, On
         }
     }
-    if (A_PriorKey == "Space") {
-        Send {Space}
+    if (A_PriorKey == "RAlt") {
+        Send {RAlt}
     }
     ; if (A_PriorKey == "\")     Send \\
     UpdateLight()

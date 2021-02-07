@@ -19,30 +19,6 @@ GoSub Setup_14
 GoSub Setup_15
 GoSub Setup_16
 GoSub Setup_17
-GoSub Setup_18
-GoSub Setup_19
-GoSub Setup_20
-GoSub Setup_21
-GoSub Setup_22
-GoSub Setup_23
-GoSub Setup_24
-GoSub Setup_25
-GoSub Setup_26
-GoSub Setup_27
-GoSub Setup_28
-GoSub Setup_29
-GoSub Setup_30
-GoSub Setup_31
-GoSub Setup_32
-GoSub Setup_33
-GoSub Setup_34
-GoSub Setup_35
-GoSub Setup_36
-GoSub Setup_37
-GoSub Setup_38
-GoSub Setup_39
-GoSub Setup_40
-GoSub Setup_41
 
 Return
 #If
@@ -74,98 +50,26 @@ Return
         #Include ./Modules\CapsLockX提权请求.ahk
 #If
     Setup_10:
-        #Include ./Modules\Eval-Javascript.ahk
-#If
-    Setup_11:
         #Include ./Modules\LaptopKeyboardFix.ahk
 #If
-    Setup_12:
+    Setup_11:
         #Include ./Modules\SaladictTranslate.ahk
 #If
-    Setup_13:
+    Setup_12:
         #Include ./Modules\SnoChordTyping.ahk
 #If
-    Setup_14:
+    Setup_13:
         #Include ./Modules\ToolTipFont.ahk
 #If
-    Setup_15:
-        #Include ./Modules\功能-秒打时间戳.ahk
-#If
-    Setup_16:
-        #Include ./Modules\功能-锁屏时自动息屏.ahk
-#If
-    Setup_17:
-        #Include ./Modules\应用-Acrobat增强.ahk
-#If
-    Setup_18:
-        #Include ./Modules\应用-Acrobat自动缩放.ahk
-#If
-    Setup_19:
-        #Include ./Modules\应用-Anki增强.ahk
-#If
-    Setup_20:
-        #Include ./Modules\应用-BTSync1.4.111快速添加Key.ahk
-#If
-    Setup_21:
+    Setup_14:
         #Include ./Modules\应用-CapsX-Cursor.ahk
 #If
-    Setup_22:
-        #Include ./Modules\应用-Edge增强.ahk
-#If
-    Setup_23:
+    Setup_15:
         #Include ./Modules\应用-IAR改选项为CMSIS-DAP.ahk
 #If
-    Setup_24:
+    Setup_16:
         #Include ./Modules\应用-LoopbackExemptionManager.ahk
 #If
-    Setup_25:
+    Setup_17:
         #Include ./Modules\应用-MobaXterm.ahk
-#If
-    Setup_26:
-        #Include ./Modules\应用-mstsc远程桌面增强.ahk
-#If
-    Setup_27:
-        #Include ./Modules\应用-OneNote2016增强.ahk
-#If
-    Setup_28:
-        #Include ./Modules\应用-OneNoteMetro拓展.ahk
-#If
-    Setup_29:
-        #Include ./Modules\应用-QQ_UWP增强.ahk
-#If
-    Setup_30:
-        #Include ./Modules\应用-Telegram.ahk
-#If
-    Setup_31:
-        #Include ./Modules\应用-TIM添加常驻功能.ahk
-#If
-    Setup_32:
-        #Include ./Modules\应用-TIM连接OneNote2016.ahk
-#If
-    Setup_33:
-        #Include ./Modules\应用-UWP应用增强.ahk
-#If
-    Setup_34:
-        #Include ./Modules\应用-文明6回车左置.ahk
-#If
-    Setup_35:
-        #Include ./Modules\应用-桌面QQ增强.ahk
-#If
-    Setup_36:
-        #Include ./Modules\应用-网易云音乐.ahk
-#If
-    Setup_37:
-        #Include ./Modules\应用-讯飞输入法语音悬浮窗.ahk
-#If
-    Setup_38:
-        #Include ./Modules\插件-VSCode增强.ahk
-#If
-    Setup_39:
-        #Include ./Modules\插件-媒体键.ahk
-#If
-    Setup_40:
-        #Include ./Modules\插件-控制台启用CtrlV粘贴.ahk
-#If
-    Setup_41:
-        #Include ./Modules\插件-雪星转屏.ahk
 
