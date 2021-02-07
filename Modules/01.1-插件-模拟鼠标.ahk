@@ -384,8 +384,8 @@ ScrollTickerStart(){
 #If CapsLockXMode == CM_CapsLockX || CapsLockXMode == CM_FN
 
 ; 鼠标按键处理
-*q:: RButton
-*e:: LButton
+*q:: LButton
+*e:: RButton
 ; `:: Send {LButton 5}
 ; *e:: Send {Blind}{LButton Down}
 ; *e up:: Send {Blind}{LButton Up}
